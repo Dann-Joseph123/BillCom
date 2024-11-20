@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1,2,3">
+
+    <TableRow>
+        <TextView
+            android:id="@+id/txtCurrencies"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_column="1"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/txtToPeso"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_column="2"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/txtInv"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_column="3"
+            android:textColor="@color/black"/>
+    </TableRow>
+
+</TableLayout>

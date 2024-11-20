@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fffded">
+
+    <!--    vertical-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp">
+
+        <!--        horizontal-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:text="Appliance Name: "
+                android:textColor="@color/black"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/aleo"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtapplianceName"
+                android:text="Object Name"
+                android:textColor="@color/black"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/aleo"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:text="Power Consumption: "
+                android:textColor="@color/black"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/aleo"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtElectricCapacity"
+                android:text="ECC"
+                android:textColor="@color/black"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/aleo"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:text="Energy Consumption per day: "
+                android:textColor="@color/black"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/aleo"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtConsumptionPerDay"
+                android:text="10"
+                android:textColor="@color/black"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/aleo"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:text="Cost per day in Pesos: "
+                android:textColor="@color/black"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/aleo"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtCostPerDay"
+                android:text="10"
+                android:textColor="@color/black"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/aleo"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:text="Cost per week in Pesos: "
+                android:textColor="@color/black"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/aleo"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtCostPerWeek"
+                android:text="10"
+                android:textColor="@color/black"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/aleo"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

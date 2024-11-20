@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lightbg"
+    tools:context=".fuelprice_activity">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="249dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fuelpricebg" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="386dp"
+        android:layout_height="253dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="28dp"
+        android:background="#faf7d1"
+        android:stretchColumns=" 1, 2, 3, 4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7">
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Fuels, price per liter"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_column="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Date"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_column="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="PHP"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_column="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="USD"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recviewPetrolPrices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnMainMenu"
+        android:layout_width="285dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="160dp"
+        android:backgroundTint="#2B384E"
+        android:fontFamily="@font/aleo"
+        android:text="@string/others"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

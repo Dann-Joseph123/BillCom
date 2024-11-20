@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lightbg"
+    tools:context=".loginactivity">
+
+
+    <ImageView
+        android:id="@+id/billcombg"
+        android:layout_width="413dp"
+        android:layout_height="277dp"
+        android:src="@drawable/billcombg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <EditText
+        android:id="@+id/etUsernameLogin"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="80dp"
+        android:hint=" Username"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:textColorHint="#757575"
+        android:fontFamily="@font/aleo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/billcombg" />
+
+    <EditText
+        android:id="@+id/etPasswordLogin"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:textColorHint="#757575"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:fontFamily="@font/aleo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUsernameLogin" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/HiderLogin"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/etPasswordLogin"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/etPasswordLogin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etPasswordLogin"
+        app:layout_constraintTop_toBottomOf="@+id/etUsernameLogin"
+        app:passwordToggleEnabled="true">
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLogInLogin"
+        android:layout_width="285dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/HiderLogin"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#237026"
+        android:fontFamily="@font/aleo"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HiderLogin" />
+
+    <Button
+        android:id="@+id/btnForgetPassword"
+        android:layout_width="285dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/HiderLogin"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FF9E10"
+        android:fontFamily="@font/aleo"
+        android:text="Forgot Password  "
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogInLogin" />
+
+    <Button
+        android:id="@+id/btnBackLogin"
+        android:layout_width="285dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/aleo"
+        android:text="Back"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnForgetPassword" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.secondapplication.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="BillCom"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/SplashScreen">
+        <activity
+            android:name=".editUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loggedInSettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".forgetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NoteDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutWirklich"
+            android:exported="false" />
+        <activity
+            android:name=".LoginRegister"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".DarkMode"
+            android:exported="false" />
+        <activity
+            android:name=".informationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginactivity"
+            android:exported="false" />
+        <activity
+            android:name=".fuelprice_activity"
+            android:exported="false" />
+        <activity
+            android:name=".currencyexchange_activity"
+            android:exported="false" />
+        <activity
+            android:name=".editDeleteApplianceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".splashscreen"
+            android:exported="false" />
+        <activity
+            android:name=".NavigationDrawer"
+            android:exported="false"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/Theme.SecondApplication.NoActionBar" />
+        <activity
+            android:name=".createApplianceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".others_activity"
+            android:exported="false" />
+        <activity
+            android:name=".recordbills_activity"
+            android:exported="false" />
+        <activity
+            android:name=".compute_activity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

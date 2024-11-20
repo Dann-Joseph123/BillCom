@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lightbg"
+    tools:context=".others_activity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="415dp"
+        android:layout_height="378dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/otherimage" />
+
+    <Button
+        android:id="@+id/btnFuelPrice"
+        android:layout_width="260dp"
+        android:layout_height="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="92dp"
+        android:backgroundTint="#2B384E"
+        android:fontFamily="@font/aleo"
+        android:text="@string/fuel_price"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/btnCurrencyExchange"
+        android:layout_width="260dp"
+        android:layout_height="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#2B384E"
+        android:fontFamily="@font/aleo"
+        android:text="@string/currency_exchange"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFuelPrice"
+        tools:text="Currency Exchange" />
+
+    <Button
+        android:id="@+id/toMainmenu"
+        android:layout_width="260dp"
+        android:layout_height="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#2B384E"
+        android:fontFamily="@font/aleo"
+        android:text="@string/back"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCurrencyExchange"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

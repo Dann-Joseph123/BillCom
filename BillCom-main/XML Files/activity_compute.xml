@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lightbg"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="244dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ecc_" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llApplianceLv"
+        android:background="#faf7d1"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/svApplianceList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:iconifiedByDefault="false"
+            android:queryHint="Appliance Name"
+            android:background="#8f8576"/>
+
+        <ListView
+            android:id="@+id/lvAppliance"
+            android:layout_width="match_parent"
+            android:layout_height="460dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5">
+        </ListView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="#237026"
+        android:textColor="@color/white"
+        android:fontFamily="@font/aleo"
+        android:text="CREATE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llApplianceLv" />
+
+    <Button
+        android:id="@+id/btnBacktoMainmenu"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:fontFamily="@font/aleo"
+        android:text="@string/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llApplianceLv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

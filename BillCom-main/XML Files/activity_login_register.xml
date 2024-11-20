@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".LoginRegister"
+    android:background="@drawable/lightbg">
+
+
+    <Button
+        android:id="@+id/btnRegisterLoginRegister"
+        android:layout_width="285dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:background="#faf7d1"
+        android:backgroundTint="#237026"
+        android:fontFamily="@font/aleo"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <Button
+        android:id="@+id/btnLoginLoginRegister"
+        android:layout_width="285dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btnRegisterLoginRegister"
+        android:layout_marginTop="10dp"
+        android:background="#faf7d1"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"
+        android:fontFamily="@font/aleo"
+        android:text="Login"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegisterLoginRegister" />
+
+
+    <Button
+        android:id="@+id/btnBackLoginRegister"
+        android:layout_width="285dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:background="#faf7d1"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/aleo"
+        android:text="Back"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoginLoginRegister" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="445dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/billcombg" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
